@@ -51,9 +51,9 @@ export default function ThreadsPage() {
           {products.map((product) => (
             <div
               key={product.slug}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
-              <div className="relative h-40 overflow-hidden rounded-2xl border border-white/10 bg-charcoal/70">
+              <div className="relative h-40 overflow-hidden rounded-2xl border border-black/10 bg-charcoal/70">
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -68,7 +68,7 @@ export default function ThreadsPage() {
               <p className="mt-3 text-xs text-steel">{product.description}</p>
               <div className="mt-4 flex flex-wrap gap-2 text-[10px] uppercase tracking-[0.3em] text-steel">
                 {product.tags.map((tag) => (
-                  <span key={tag} className="rounded-full border border-white/10 px-3 py-1">
+                  <span key={tag} className="rounded-full border border-black/10 px-3 py-1">
                     {tag}
                   </span>
                 ))}
@@ -94,7 +94,7 @@ export default function ThreadsPage() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-3xl border border-white/10 bg-charcoal p-6 text-sm text-fog"
+                className="rounded-3xl border border-black/10 bg-charcoal p-6 text-sm text-fog"
               >
                 {item}
               </div>

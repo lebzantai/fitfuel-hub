@@ -48,7 +48,7 @@ export default function HomePage() {
             </p>
           </div>
           <motion.div
-            className="flex-1 rounded-3xl border border-white/10 bg-graphite p-8 shadow-soft"
+            className="flex-1 rounded-3xl border border-black/10 bg-graphite p-8 shadow-soft"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -69,7 +69,7 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <div className="rounded-2xl border border-white/10 bg-charcoal p-6">
+              <div className="rounded-2xl border border-black/10 bg-charcoal p-6">
                 <p className="text-xs uppercase tracking-[0.3em] text-steel">
                   Results Preview
                 </p>
@@ -87,7 +87,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-graphite">
+      <section className="border-y border-black/10 bg-graphite">
         <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-6 px-4 py-10 text-xs uppercase tracking-[0.3em] text-steel md:grid-cols-4 md:px-6">
           <span>Trusted by Gauteng founders</span>
           <span>Used by shift workers</span>
@@ -120,7 +120,7 @@ export default function HomePage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl border border-white/10 bg-graphite p-8"
+              className="rounded-3xl border border-black/10 bg-graphite p-8"
             >
               <h3 className="font-display text-2xl uppercase tracking-[0.2em] text-fog">
                 {item.title}
@@ -150,7 +150,7 @@ export default function HomePage() {
             {principles.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-white/10 bg-charcoal p-5 text-sm text-fog"
+                className="rounded-2xl border border-black/10 bg-charcoal p-5 text-sm text-fog"
               >
                 {item}
               </div>
@@ -167,7 +167,7 @@ export default function HomePage() {
           {howItWorks.map((step) => (
             <div
               key={step.title}
-              className="rounded-3xl border border-white/10 bg-graphite p-8"
+              className="rounded-3xl border border-black/10 bg-graphite p-8"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {step.title}
@@ -180,7 +180,7 @@ export default function HomePage() {
 
       <section className="bg-graphite">
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:px-6">
-          <div className="rounded-3xl border border-white/10 bg-charcoal p-8">
+          <div className="rounded-3xl border border-black/10 bg-charcoal p-8">
             <p className="text-xs uppercase tracking-[0.3em] text-steel">
               Featured program
             </p>
@@ -195,7 +195,7 @@ export default function HomePage() {
               <Link href="/pricing">View pricing</Link>
             </Button>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-charcoal p-8">
+          <div className="rounded-3xl border border-black/10 bg-charcoal p-8">
             <p className="text-xs uppercase tracking-[0.3em] text-steel">
               Apparel drop
             </p>
@@ -228,7 +228,7 @@ export default function HomePage() {
           {testimonials.map((item) => (
             <div
               key={item.name}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
               <p className="text-sm text-fog">“{item.quote}”</p>
               <p className="mt-4 text-xs uppercase tracking-[0.3em] text-steel">
@@ -241,7 +241,7 @@ export default function HomePage() {
           {metrics.map((metric) => (
             <div
               key={metric.label}
-              className="rounded-2xl border border-white/10 bg-graphite p-4"
+              className="rounded-2xl border border-black/10 bg-graphite p-4"
             >
               <p className="text-lg font-semibold text-fog">{metric.value}</p>
               <p className="text-xs text-steel">{metric.label}</p>

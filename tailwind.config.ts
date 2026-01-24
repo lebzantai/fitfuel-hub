@@ -5,11 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        charcoal: "#07090b",
-        graphite: "#0f1318",
-        steel: "#8a9199",
-        fog: "#f5f6f8",
-        accent: "#d0641f"
+        charcoal: "#f5f5f5",
+        graphite: "#ffffff",
+        steel: "#6b6f76",
+        fog: "#0b0b0b",
+        accent: "#111111"
       },
       boxShadow: {
         soft: "0 20px 60px -40px rgba(0,0,0,0.7)"

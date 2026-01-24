@@ -3,7 +3,7 @@ import { footerLinks } from "@/content/copy";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-graphite">
+    <footer className="border-t border-black/10 bg-graphite">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 md:grid-cols-[1.5fr_1fr_1fr] md:px-6">
         <div>
           <p className="font-display text-xl uppercase tracking-[0.25em] text-fog">
@@ -37,7 +37,7 @@ export function SiteFooter() {
           </div>
         ))}
       </div>
-      <div className="border-t border-white/10 px-4 py-6 text-center text-xs text-steel md:px-6">
+      <div className="border-t border-black/10 px-4 py-6 text-center text-xs text-steel md:px-6">
         © 2024 FitFuel. Privacy + Terms placeholders.
       </div>
     </footer>

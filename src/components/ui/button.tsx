@@ -10,10 +10,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-accent text-fog hover:bg-[#e17628]",
+        default: "bg-accent text-white hover:bg-[#000000]",
         secondary:
-          "border border-white/15 bg-transparent text-fog hover:border-white/40",
-        ghost: "bg-transparent text-fog hover:bg-white/5"
+          "border border-black/15 bg-transparent text-fog hover:border-black/40",
+        ghost: "bg-transparent text-fog hover:bg-black/5"
       },
       size: {
         default: "px-6 py-3",

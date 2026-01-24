@@ -45,7 +45,7 @@ export default function ContactPage() {
           ].map((card) => (
             <div
               key={card.title}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {card.title}
@@ -91,13 +91,13 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          <form className="rounded-3xl border border-white/10 bg-charcoal p-6">
+          <form className="rounded-3xl border border-black/10 bg-charcoal p-6">
             <label className="text-xs uppercase tracking-[0.3em] text-steel">
               Name
               <input
                 type="text"
                 name="name"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-black/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
                 placeholder="Full name"
               />
             </label>
@@ -106,7 +106,7 @@ export default function ContactPage() {
               <input
                 type="tel"
                 name="phone"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-black/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
                 placeholder="+27"
               />
             </label>
@@ -115,7 +115,7 @@ export default function ContactPage() {
               <input
                 type="text"
                 name="goal"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-black/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
                 placeholder="Strength, fat loss, structure"
               />
             </label>
@@ -123,7 +123,7 @@ export default function ContactPage() {
               Budget range
               <select
                 name="budget"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-black/10 bg-graphite px-4 py-3 text-sm text-fog focus:border-accent focus:outline-none"
               >
                 <option>R1,000 - R2,000</option>
                 <option>R2,000 - R4,000</option>

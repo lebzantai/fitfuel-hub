@@ -92,7 +92,7 @@ export default function GamesPage() {
           ].map((section) => (
             <div
               key={section.title}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {section.title}

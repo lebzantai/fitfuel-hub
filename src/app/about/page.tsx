@@ -42,7 +42,7 @@ export default function AboutPage() {
             ].map((line) => (
               <div
                 key={line}
-                className="rounded-3xl border border-white/10 bg-charcoal p-6 text-sm text-fog"
+                className="rounded-3xl border border-black/10 bg-charcoal p-6 text-sm text-fog"
               >
                 {line}
               </div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
           {principles.map((item) => (
             <div
               key={item}
-              className="rounded-2xl border border-white/10 bg-graphite p-5 text-sm text-fog"
+              className="rounded-2xl border border-black/10 bg-graphite p-5 text-sm text-fog"
             >
               {item}
             </div>

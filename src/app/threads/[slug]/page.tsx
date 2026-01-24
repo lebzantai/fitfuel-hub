@@ -26,7 +26,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             Back to Threads
           </Link>
           <div className="mt-10 grid gap-10 md:grid-cols-2">
-            <div className="relative h-80 overflow-hidden rounded-3xl border border-white/10 bg-graphite">
+            <div className="relative h-80 overflow-hidden rounded-3xl border border-black/10 bg-graphite">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -45,7 +45,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 {product.price}
               </p>
               <p className="mt-4 text-sm text-steel">{product.description}</p>
-              <div className="mt-6 rounded-2xl border border-white/10 bg-graphite p-6">
+              <div className="mt-6 rounded-2xl border border-black/10 bg-graphite p-6">
                 <p className="text-xs uppercase tracking-[0.3em] text-steel">
                   Fabric + Fit
                 </p>
@@ -77,7 +77,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             {sizeGuide.map((size) => (
               <div
                 key={size.size}
-                className="rounded-2xl border border-white/10 bg-charcoal p-5 text-sm text-fog"
+                className="rounded-2xl border border-black/10 bg-charcoal p-5 text-sm text-fog"
               >
                 <p className="text-xs uppercase tracking-[0.3em] text-steel">
                   {size.size}

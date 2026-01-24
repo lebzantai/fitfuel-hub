@@ -71,7 +71,7 @@ export default function ForgePage() {
               progress. We work with gym-goers, founders, professionals, and
               committed first-timers.
             </p>
-            <div className="mt-6 rounded-3xl border border-white/10 bg-charcoal p-6">
+            <div className="mt-6 rounded-3xl border border-black/10 bg-charcoal p-6">
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 FitFuel Principles
               </p>
@@ -91,7 +91,7 @@ export default function ForgePage() {
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {tier.name}
@@ -137,7 +137,7 @@ export default function ForgePage() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-white/10 bg-charcoal p-5 text-sm text-fog"
+                className="rounded-2xl border border-black/10 bg-charcoal p-5 text-sm text-fog"
               >
                 {item}
               </div>
@@ -154,7 +154,7 @@ export default function ForgePage() {
           {howItWorks.map((step) => (
             <div
               key={step.title}
-              className="rounded-3xl border border-white/10 bg-graphite p-6 text-sm text-fog"
+              className="rounded-3xl border border-black/10 bg-graphite p-6 text-sm text-fog"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {step.title}
@@ -162,7 +162,7 @@ export default function ForgePage() {
               <p className="mt-4">{step.description}</p>
             </div>
           ))}
-          <div className="rounded-3xl border border-white/10 bg-graphite p-6 text-sm text-fog">
+          <div className="rounded-3xl border border-black/10 bg-graphite p-6 text-sm text-fog">
             <p className="text-xs uppercase tracking-[0.3em] text-steel">
               Review
             </p>
@@ -182,7 +182,7 @@ export default function ForgePage() {
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-                className="rounded-3xl border border-white/10 bg-charcoal p-6"
+                className="rounded-3xl border border-black/10 bg-charcoal p-6"
               >
                 <p className="text-sm text-fog">{faq.question}</p>
                 <p className="mt-4 text-xs text-steel">{faq.answer}</p>

@@ -33,7 +33,7 @@ export default function ResultsPage() {
             {testimonials.map((item) => (
               <div
                 key={item.name}
-                className="rounded-3xl border border-white/10 bg-charcoal p-6"
+                className="rounded-3xl border border-black/10 bg-charcoal p-6"
               >
                 <p className="text-sm text-fog">“{item.quote}”</p>
                 <p className="mt-4 text-xs uppercase tracking-[0.3em] text-steel">
@@ -53,9 +53,9 @@ export default function ResultsPage() {
           {[1, 2, 3].map((item) => (
             <div
               key={item}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
-              <div className="h-48 rounded-2xl border border-white/10 bg-charcoal" />
+              <div className="h-48 rounded-2xl border border-black/10 bg-charcoal" />
               <p className="mt-4 text-xs uppercase tracking-[0.3em] text-steel">
                 Placeholder transformation
               </p>
@@ -73,7 +73,7 @@ export default function ResultsPage() {
             {metrics.map((metric) => (
               <div
                 key={metric.label}
-                className="rounded-2xl border border-white/10 bg-charcoal p-5"
+                className="rounded-2xl border border-black/10 bg-charcoal p-5"
               >
                 <p className="text-lg font-semibold text-fog">{metric.value}</p>
                 <p className="text-xs text-steel">{metric.label}</p>
@@ -87,7 +87,7 @@ export default function ResultsPage() {
         <h2 className="font-display text-3xl uppercase tracking-[0.2em] text-fog">
           Case study template
         </h2>
-        <div className="mt-8 rounded-3xl border border-white/10 bg-graphite p-8">
+        <div className="mt-8 rounded-3xl border border-black/10 bg-graphite p-8">
           <div className="grid gap-6 md:grid-cols-[1.2fr_1fr]">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-steel">

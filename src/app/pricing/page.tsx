@@ -32,7 +32,7 @@ export default function PricingPage() {
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className="rounded-3xl border border-white/10 bg-graphite p-6"
+              className="rounded-3xl border border-black/10 bg-graphite p-6"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {tier.name}
@@ -66,7 +66,7 @@ export default function PricingPage() {
           <h2 className="font-display text-3xl uppercase tracking-[0.2em] text-fog">
             Comparison
           </h2>
-          <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
+          <div className="mt-8 overflow-hidden rounded-3xl border border-black/10">
             <table className="w-full text-left text-sm text-fog">
               <thead className="bg-charcoal text-xs uppercase tracking-[0.3em] text-steel">
                 <tr>
@@ -78,7 +78,7 @@ export default function PricingPage() {
               </thead>
               <tbody>
                 {pricingTable.map((row) => (
-                  <tr key={row.feature} className="border-t border-white/10">
+                  <tr key={row.feature} className="border-t border-black/10">
                     <td className="px-6 py-4 text-steel">{row.feature}</td>
                     <td className="px-6 py-4">
                       {row.core ? "Included" : "—"}

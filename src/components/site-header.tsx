@@ -11,7 +11,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-charcoal/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-black/10 bg-charcoal/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
@@ -48,7 +48,7 @@ export function SiteHeader() {
         </button>
       </div>
       {open ? (
-        <div className="border-t border-white/10 bg-charcoal md:hidden">
+        <div className="border-t border-black/10 bg-charcoal md:hidden">
           <div className="flex flex-col gap-4 px-4 py-6 text-sm uppercase tracking-[0.2em] text-steel">
             {navItems.map((item) => (
               <Link
