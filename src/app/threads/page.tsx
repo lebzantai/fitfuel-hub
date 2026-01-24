@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/products";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
@@ -52,7 +53,14 @@ export default function ThreadsPage() {
               key={product.slug}
               className="rounded-3xl border border-white/10 bg-graphite p-6"
             >
-              <div className="h-40 rounded-2xl border border-white/10 bg-charcoal/70" />
+              <div className="relative h-40 overflow-hidden rounded-2xl border border-white/10 bg-charcoal/70">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <p className="mt-5 text-sm text-steel">{product.name}</p>
               <p className="mt-2 text-lg font-semibold text-fog">
                 {product.price}

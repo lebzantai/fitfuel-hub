@@ -10,7 +10,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-accent text-fog hover:bg-[#a32323]",
+        default: "bg-accent text-fog hover:bg-[#e17628]",
         secondary:
           "border border-white/15 bg-transparent text-fog hover:border-white/40",
         ghost: "bg-transparent text-fog hover:bg-white/5"

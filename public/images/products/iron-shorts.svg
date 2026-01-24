@@ -1,0 +1,7 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" fill="#0B0F14"/>
+  <rect x="48" y="40" width="544" height="400" rx="32" stroke="#1A2027" stroke-width="2"/>
+  <path d="M238 160H402L424 352H216L238 160Z" fill="#16202A"/>
+  <rect x="304" y="212" width="32" height="64" rx="6" fill="#D0641F"/>
+  <text x="320" y="420" fill="#8A9199" font-size="16" font-family="Arial" text-anchor="middle">Iron Shorts</text>
+</svg>

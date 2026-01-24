@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { products, sizeGuide } from "@/data/products";
@@ -25,7 +26,14 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             Back to Threads
           </Link>
           <div className="mt-10 grid gap-10 md:grid-cols-2">
-            <div className="h-80 rounded-3xl border border-white/10 bg-graphite" />
+            <div className="relative h-80 overflow-hidden rounded-3xl border border-white/10 bg-graphite">
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-cover"
+              />
+            </div>
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-steel">
                 {product.tags.join(" • ")}
