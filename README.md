@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# FitFuel — Next.js App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Premium, WhatsApp-first website for FitFuel Hub + Forge + Threads + Games.
 
-## Available Scripts
+## Tech Stack
+- Next.js (App Router) + TypeScript
+- Tailwind CSS
+- next/font for typography
 
-In the project directory, you can run:
+## File Tree (key paths)
+```
+src/
+  app/
+    layout.tsx
+    page.tsx
+    about/page.tsx
+    apply/page.tsx
+    contact/page.tsx
+    faq/page.tsx
+    forge/page.tsx
+    games/page.tsx
+    pricing/page.tsx
+    programs/page.tsx
+    policies/page.tsx
+    results/page.tsx
+    sponsors/page.tsx
+    threads/page.tsx
+    robots.ts
+    sitemap.ts
+  components/
+    Analytics.tsx
+    Button.tsx
+    Card.tsx
+    Divider.tsx
+    FAQAccordion.tsx
+    FitFuelLogo.tsx
+    Footer.tsx
+    GridBackground.tsx
+    Hero.tsx
+    LeadForm.tsx
+    MobileDrawer.tsx
+    Navbar.tsx
+    OfferCards.tsx
+    PricingTable.tsx
+    TestimonialSlider.tsx
+    WhatsAppFloatingButton.tsx
+  content/
+    site.ts
+  lib/
+    utils.ts
+public/
+  og-placeholder.svg
+```
 
-### `npm start`
+## Local Run
+```bash
+npm install
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Edit Content
+All copy, pricing, FAQs, testimonials, links, and policy text live in a single config file:
+- `src/content/site.ts`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Edit Brand Elements
+- Logo placeholder: `src/components/FitFuelLogo.tsx`
+- OpenGraph image placeholder: `public/og-placeholder.svg`
+- Analytics toggle: `src/components/Analytics.tsx` (`analyticsEnabled`)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+- WhatsApp link generation lives in `src/lib/utils.ts`.
+- Each page uses Next.js Metadata for SEO and social cards.
