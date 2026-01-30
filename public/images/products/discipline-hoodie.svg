@@ -1,0 +1,8 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" fill="#FFFFFF"/>
+  <rect x="48" y="40" width="544" height="400" rx="32" stroke="#E6E8EB" stroke-width="2"/>
+  <path d="M208 132H432L468 210V352H172V210L208 132Z" fill="#111827"/>
+  <path d="M272 132L320 90L368 132H272Z" fill="#1F2937"/>
+  <path d="M304 210H336V320H304V210Z" fill="#111111"/>
+  <text x="320" y="420" fill="#6B7280" font-size="16" font-family="Arial" text-anchor="middle">Discipline Hoodie</text>
+</svg>
